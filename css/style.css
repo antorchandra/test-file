@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+ol,ul{
+    list-style-type: none;
+}
+.wrapper_full{
+    width: 100%;
+}
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+/* common css end */
+
+/*  menu_part start */
+.menu_part{
+    background: #f1f1f1;
+    height: 70px;
+}
+.logo{
+    width: 150px;
+    float: left;
+    height: 70px;
+    margin: 0px 10px;
+}
+.logo a img{
+    width: 100%;
+    padding: 20px 0px;
+}
+.menu{
+     width: 770px;
+    float: left;
+    height: 70px;
+    margin: 0px 10px;
+}
+.menu ul{
+    float: right;
+}
+.menu ul li{
+    float: left;
+   /* display: inline-block;*/
+    position: relative;
+}
+.menu ul li a{
+    display: block;
+    color: #000;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: sans-serif;
+    padding: 24px 15px;
+    transition: all linear 0.4s;
+    text-align: center;
+}
+.menu ul li.active a,
+.menu ul li:hover a{
+    background: #093fb0;
+    color: #fff;
+}
+
+/* 1st dropdwon start */
+.menu ul li ul{
+    position: absolute;
+    left: -60px;
+    top: 100px;
+    width: 200px;
+    background: #f1f1f1;
+    padding: 10px 0px;
+    visibility: hidden;
+    transition: all linear 0.4s;
+    z-index: 999;
+    
+}
+
+.menu ul li:hover ul{
+    top: 70px;
+    visibility: visible;
+}
+.menu ul li ul li{
+    float: none;
+}
+.menu ul li ul li a{
+    padding: 5px 0px;
+}
+.menu ul li:hover ul li a{
+    background: #f1f1f1;
+    color: #000;
+}
+.menu ul li ul li:hover  a{
+     background: #093fb0;
+    color: #fff;
+}
+/* 2nd dropdwon start */
+.menu ul li ul li ul{
+    left: 200px;
+    visibility: hidden;
+    opacity: 0;
+}
+.menu ul li ul li:hover ul{
+   top: 0;
+    visibility: visible;
+    opacity: 1;
+}
+.menu ul li ul li:hover ul li a{
+     background: #f1f1f1;
+    color: #000;
+}
+.menu ul li ul li ul li:hover a{
+    background: #093fb0;
+    color: #fff;
+}
+.menu ul li ul li ul.last_dp{
+    left: -200px;
+}
+/*  menu_part end */
